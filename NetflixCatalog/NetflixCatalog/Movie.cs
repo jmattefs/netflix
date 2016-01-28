@@ -9,6 +9,10 @@ namespace NetflixCatalog
     class Movie : Title
     {
         int duration;
+        public Movie(int duration)
+        {
+            this.duration = duration;
+        }
 
         public override string ToString()
         {

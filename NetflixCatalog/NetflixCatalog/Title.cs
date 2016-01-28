@@ -10,6 +10,7 @@ namespace NetflixCatalog
     {
         public string name;
         int? rating;
+        
 
         public Title(string name, int rating)
         {
@@ -20,6 +21,15 @@ namespace NetflixCatalog
         {
             name = null;
             rating = null;
+
+        }
+        public void Genres()
+        {
+            List<string> genres = new List<string>();
+            genres.Add("Action");
+            genres.Add("Comedy");
+            genres.Add("Romance");
+
 
         }
     }
