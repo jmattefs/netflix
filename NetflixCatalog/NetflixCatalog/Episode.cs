@@ -8,5 +8,12 @@ namespace NetflixCatalog
 {
     class Episode
     {
+        int rating;
+
+        public Episode(int rating)
+        {
+            this.rating = rating;
+        }
+        
     }
 }

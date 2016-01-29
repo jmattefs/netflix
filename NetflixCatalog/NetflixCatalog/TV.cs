@@ -6,9 +6,20 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalog
 {
-    class TV : Title
+    public class TV : Title
     {
-        List<string> Episodes;
+        int episodes;
+        public override int? rating { get; set; }
+
+        public TV(int episodes)
+        {
+            this.episodes = episodes;
+        }
+        
+        public override string ToString()
+        {
+            return name + ": " + episodes + " episodes; "+ "Avg. Episode Rating: " + rating ;
+        }
 
     }
 }

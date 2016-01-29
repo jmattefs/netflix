@@ -135,7 +135,78 @@ namespace NetflixCatalog
             NotebookInfo = Notebook.ToString();
             Console.WriteLine(NotebookInfo);
         }
-
+        static void TwentyFour()
+        {
+            Title TwentyFour = new TV(204);
+            TwentyFour.name = "24";
+            TwentyFour.rating = 4;
+            string TwentyFourInfo;
+            TwentyFourInfo = TwentyFour.ToString();
+            Console.WriteLine(TwentyFourInfo);
+        }
+        static void Seinfeld()
+        {
+            Title Seinfeld = new TV(180);
+            Seinfeld.name = "Seinfeld";
+            Seinfeld.rating = 3;
+            string SeinfeldInfo;
+            SeinfeldInfo = Seinfeld.ToString();
+            Console.WriteLine(SeinfeldInfo);
+        }
+        static void Chuck()
+        {
+            Title Chuck = new TV(91);
+            Chuck.name = "Chuck";
+            Chuck.rating = 1;
+            string ChuckInfo;
+            ChuckInfo = Chuck.ToString();
+            Console.WriteLine(ChuckInfo);
+        }
+        static void Greys()
+        {
+            Title Greys = new TV(255);
+            Greys.name = "Grey's Anatomy";
+            Greys.rating = 1;
+            string GreysInfo;
+            GreysInfo = Greys.ToString();
+            Console.WriteLine(GreysInfo);
+        }
+        static void GossipGirl()
+        {
+            Title GossipGirl = new TV(121);
+            GossipGirl.name = "Gossip Girl";
+            GossipGirl.rating = 1;
+            string GossipGirlInfo;
+            GossipGirlInfo = GossipGirl.ToString();
+            Console.WriteLine(GossipGirlInfo);
+        }
+        static void HIMYM()
+        {
+            Title HIMYM = new TV(208);
+            HIMYM.name = "How I Met Your Mother";
+            HIMYM.rating = 2;
+            string HIMYMinfo;
+            HIMYMinfo = HIMYM.ToString();
+            Console.WriteLine(HIMYMinfo);
+        }
+        static void Buffy()
+        {
+            Title Buffy = new TV(144);
+            Buffy.name = "Buffy the Vampire Slayer";
+            Buffy.rating = 2;
+            string BuffyInfo;
+            BuffyInfo = Buffy.ToString();
+            Console.WriteLine(BuffyInfo);
+        }
+        static void IASIP()
+        {
+            Title IASIP = new TV(141);
+            IASIP.name = "It's Always Sunny in Philadelphia";
+            IASIP.rating = 4;
+            string IASIPinfo;
+            IASIPinfo = IASIP.ToString();
+            Console.WriteLine(IASIPinfo);
+        }
 
 
     }  

@@ -9,7 +9,7 @@ namespace NetflixCatalog
     public class Title
     {
         public string name;
-        public int? rating;
+        public virtual int? rating { get; set; }
         
 
         public Title(string name, int rating)
