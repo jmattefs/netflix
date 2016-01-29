@@ -8,40 +8,42 @@ using System.Collections;
 
 namespace NetflixCatalog
 {
-    public class Genre 
+    public class Genre : IEnumerable
     {
-        string genre;
-    
+        
+        List<Title> Titles = new List<Title>();
+       
         public Genre()
         {
-            
+        
         }
+
         public void GenreAll()
         {
-            List<string> Catalogue = new List<string>();
-            Catalogue.Add("Heat");
-            Catalogue.Add("Knocked Up");
-            Catalogue.Add("Titanic");
-            Catalogue.Add("Die Hard");
-            Catalogue.Add("Silver Lining's Playbook");
-            Catalogue.Add("Hot Fuzz");
-            Catalogue.Add("Dirty Dancing");
-            Catalogue.Add("Rush Hour");
-            Catalogue.Add("The Notebook");
-            Catalogue.Add("Mad Max");
-            Catalogue.Add("The Princess Bride");
-            Catalogue.Add("Mr and Mrs Smith");
-            Catalogue.Add("Zoolander");
-            Catalogue.Add("24");
-            Catalogue.Add("Seinfeld");
-            Catalogue.Add("Grey's Anatomy");
-            Catalogue.Add("Chuck");
-            Catalogue.Add("Gossip Girl");
-            Catalogue.Add("How I Met Your Mother");
-            Catalogue.Add("Buffy the Vampire Slayer");
-            Catalogue.Add("Its Always Sunny in Philadelphia");
+            List<string> MediaCatalogue = new List<string>();
+            MediaCatalogue.Add("Heat");
+            MediaCatalogue.Add("Knocked Up");
+            MediaCatalogue.Add("Titanic");
+            MediaCatalogue.Add("Die Hard");
+            MediaCatalogue.Add("Silver Lining's Playbook");
+            MediaCatalogue.Add("Hot Fuzz");
+            MediaCatalogue.Add("Dirty Dancing");
+            MediaCatalogue.Add("Rush Hour");
+            MediaCatalogue.Add("The Notebook");
+            MediaCatalogue.Add("Mad Max");
+            MediaCatalogue.Add("The Princess Bride");
+            MediaCatalogue.Add("Mr and Mrs Smith");
+            MediaCatalogue.Add("Zoolander");
+            MediaCatalogue.Add("24");
+            MediaCatalogue.Add("Seinfeld");
+            MediaCatalogue.Add("Grey's Anatomy");
+            MediaCatalogue.Add("Chuck");
+            MediaCatalogue.Add("Gossip Girl");
+            MediaCatalogue.Add("How I Met Your Mother");
+            MediaCatalogue.Add("Buffy the Vampire Slayer");
+            MediaCatalogue.Add("Its Always Sunny in Philadelphia");
 
-            foreach(string s in Catalogue)
+            foreach(string s in MediaCatalogue)
             {
                 Console.WriteLine(s);
             }
@@ -141,6 +143,16 @@ namespace NetflixCatalog
             TVRomance.Add("How I Met Your Mother");
             TVRomance.Add("Buffy the Vampire Slayer");
         }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            foreach (Title t in Titles)
+            {
+                yield return t;
+            }
+        }
+        
+
         public static Genre operator + (Genre Comedy, Genre Romantic)
         {
             Genre RomanticComedy = new Genre();
