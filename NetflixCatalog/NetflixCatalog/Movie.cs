@@ -16,7 +16,7 @@ namespace NetflixCatalog
 
         public override string ToString()
         {
-            return name + ": " + duration + " minutes; "+ rating +" thumbs up!" ;
+            return name + ": " + duration + " minutes long and "+ rating +" thumbs up!" ;
         }
         
     }

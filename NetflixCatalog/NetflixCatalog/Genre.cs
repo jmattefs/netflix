@@ -77,7 +77,70 @@ namespace NetflixCatalog
                 Console.WriteLine(s);
             }
         }
-        
+        public void GenreRomance()
+        {
+            List<string> RomanceMovies = new List<string>();
+            RomanceMovies.Add("Titanic");
+            RomanceMovies.Add("Silver Linings Playbook");
+            RomanceMovies.Add("Dirty Dancing");
+            RomanceMovies.Add("The Notebook");
+            RomanceMovies.Add("The Princess Bride");
+            RomanceMovies.Add("Mr and Mrs Smith");
+
+        }
+        public void GenreMovies()
+        {
+            List<string> Movies = new List<string>();
+            Movies.Add("Heat");
+            Movies.Add("Knocked Up");
+            Movies.Add("Titanic");
+            Movies.Add("Die Hard");
+            Movies.Add("Silver Lining's Playbook");
+            Movies.Add("Hot Fuzz");
+            Movies.Add("Dirty Dancing");
+            Movies.Add("Rush Hour");
+            Movies.Add("The Notebook");
+            Movies.Add("Mad Max");
+            Movies.Add("The Princess Bride");
+            Movies.Add("Mr and Mrs Smith");
+            Movies.Add("Zoolander");
+        }
+        public void GenreTV()
+        {
+            List<string> TV = new List<string>();
+            TV.Add("24");
+            TV.Add("Seinfeld");
+            TV.Add("Grey's Anatomy");
+            TV.Add("Chuck");
+            TV.Add("Gossip Girl");
+            TV.Add("How I Met Your Mother");
+            TV.Add("Buffy the Vampire Slayer");
+            TV.Add("Its Always Sunny in Philadelphia");
+        }
+        public void GenreTVComedy()
+        {
+            List<string> TVComedy = new List<string>();
+            TVComedy.Add("Seinfeld");
+            TVComedy.Add("Chuck");
+            TVComedy.Add("How I Met Your Mother");
+            TVComedy.Add("It's Always Sunny in Philadelphia");
+            
+        }
+        public void GenreTVAction()
+        {
+            List<string> TVAction = new List<string>();
+            TVAction.Add("24");
+            TVAction.Add("Chuck");
+            TVAction.Add("Buffy the Vampire Slayer");
+        }
+        public void GenreTVRomance()
+        {
+            List<string> TVRomance = new List<string>();
+            TVRomance.Add("Grey's Anatomy");
+            TVRomance.Add("Gossip Girl");
+            TVRomance.Add("How I Met Your Mother");
+            TVRomance.Add("Buffy the Vampire Slayer");
+        }
         public static Genre operator + (Genre Comedy, Genre Romantic)
         {
             Genre RomanticComedy = new Genre();

@@ -18,7 +18,7 @@ namespace NetflixCatalog
         
         public override string ToString()
         {
-            return name + ": " + episodes + " episodes; "+ "Avg. Episode Rating: " + rating ;
+            return name + ": " + episodes + " episodes and the Average Episode Rating is " + rating ;
         }
 
     }

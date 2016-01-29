@@ -8,7 +8,7 @@ namespace NetflixCatalog
 {
     public class Catalogue
     {
-        static void DieHard()
+        public void DieHard()
         {
             Title DieHard = new Movie(131);
             DieHard.name = "Die Hard";
@@ -17,7 +17,7 @@ namespace NetflixCatalog
             DieHardInfo = DieHard.ToString();
             Console.WriteLine(DieHardInfo);           
         }
-        static void Heat()
+        public void Heat()
         {
             Title Heat = new Movie(171);
             Heat.name = "Heat";
@@ -26,7 +26,7 @@ namespace NetflixCatalog
             HeatInfo = Heat.ToString();
             Console.WriteLine(HeatInfo);
         }
-        static void HotFuzz()
+        public void HotFuzz()
         {
             Title HotFuzz= new Movie(121);
             HotFuzz.name = "Hot Fuzz";
@@ -36,7 +36,7 @@ namespace NetflixCatalog
             Console.WriteLine(HotFuzzInfo);
 
         }
-        static void RushHour()
+        public void RushHour()
         {
             Title RushHour = new Movie(97);
             RushHour.name = "Rush Hour";
@@ -46,7 +46,7 @@ namespace NetflixCatalog
             Console.WriteLine(RushHourInfo);
 
         }
-        static void MadMax()
+        public void MadMax()
         {
             Title MadMax= new Movie(88);
             MadMax.name = "Mad Max";
@@ -56,7 +56,7 @@ namespace NetflixCatalog
             Console.WriteLine(MadMaxInfo);
 
         }
-        static void MrMrsSmith()
+        public void MrMrsSmith()
         {
             Title MrMrsSmith= new Movie(123);
             MrMrsSmith.name = "Mr and Mrs Smith";
@@ -66,7 +66,7 @@ namespace NetflixCatalog
             Console.WriteLine(MrMrsSmithInfo);
 
         }
-        static void KnockedUp()
+        public void KnockedUp()
         {
             Title KnockedUp= new Movie(129);
             KnockedUp.name = "Knocked Up";
@@ -76,7 +76,7 @@ namespace NetflixCatalog
             Console.WriteLine(KnockedUpInfo);
 
         }
-        static void SLP()
+        public void SLP()
         {
             Title SLP = new Movie(122);
             SLP.name = "Silver Linings Playbook";
@@ -86,7 +86,7 @@ namespace NetflixCatalog
             Console.WriteLine(SLPInfo);
 
         }
-        static void PrincessBride()
+        public void PrincessBride()
         {
             Title PrincessBride= new Movie(98);
             PrincessBride.name = "The Princess Bride";
@@ -96,7 +96,7 @@ namespace NetflixCatalog
             Console.WriteLine(PrincessBrideInfo);
 
         }
-        static void Zoolander()
+        public void Zoolander()
         {
             Title Zoolander= new Movie(89);
             Zoolander.name = "Zoolander";
@@ -106,7 +106,7 @@ namespace NetflixCatalog
             Console.WriteLine(ZoolanderInfo);
 
         }
-        static void Titanic()
+        public void Titanic()
         {
             Title Titanic = new Movie(194);
             Titanic.name = "Titanic";
@@ -116,7 +116,7 @@ namespace NetflixCatalog
             Console.WriteLine(TitanicInfo);
 
         }
-        static void DirtyDancing()
+        public void DirtyDancing()
         {
             Title DirtyDancing= new Movie(100);
             DirtyDancing.name = "Dirty Dancing";
@@ -126,7 +126,7 @@ namespace NetflixCatalog
             Console.WriteLine(DirtyDancingInfo);
 
         }
-        static void Notebook()
+        public void Notebook()
         {
             Title Notebook= new Movie(121);
             Notebook.name = "The Notebook";
@@ -135,7 +135,7 @@ namespace NetflixCatalog
             NotebookInfo = Notebook.ToString();
             Console.WriteLine(NotebookInfo);
         }
-        static void TwentyFour()
+        public void TwentyFour()
         {
             Title TwentyFour = new TV(204);
             TwentyFour.name = "24";
@@ -144,7 +144,7 @@ namespace NetflixCatalog
             TwentyFourInfo = TwentyFour.ToString();
             Console.WriteLine(TwentyFourInfo);
         }
-        static void Seinfeld()
+        public void Seinfeld()
         {
             Title Seinfeld = new TV(180);
             Seinfeld.name = "Seinfeld";
@@ -153,7 +153,7 @@ namespace NetflixCatalog
             SeinfeldInfo = Seinfeld.ToString();
             Console.WriteLine(SeinfeldInfo);
         }
-        static void Chuck()
+        public void Chuck()
         {
             Title Chuck = new TV(91);
             Chuck.name = "Chuck";
@@ -162,7 +162,7 @@ namespace NetflixCatalog
             ChuckInfo = Chuck.ToString();
             Console.WriteLine(ChuckInfo);
         }
-        static void Greys()
+        public void Greys()
         {
             Title Greys = new TV(255);
             Greys.name = "Grey's Anatomy";
@@ -171,7 +171,7 @@ namespace NetflixCatalog
             GreysInfo = Greys.ToString();
             Console.WriteLine(GreysInfo);
         }
-        static void GossipGirl()
+        public void GossipGirl()
         {
             Title GossipGirl = new TV(121);
             GossipGirl.name = "Gossip Girl";
@@ -180,7 +180,7 @@ namespace NetflixCatalog
             GossipGirlInfo = GossipGirl.ToString();
             Console.WriteLine(GossipGirlInfo);
         }
-        static void HIMYM()
+        public void HIMYM()
         {
             Title HIMYM = new TV(208);
             HIMYM.name = "How I Met Your Mother";
@@ -189,7 +189,7 @@ namespace NetflixCatalog
             HIMYMinfo = HIMYM.ToString();
             Console.WriteLine(HIMYMinfo);
         }
-        static void Buffy()
+        public void Buffy()
         {
             Title Buffy = new TV(144);
             Buffy.name = "Buffy the Vampire Slayer";
@@ -198,7 +198,7 @@ namespace NetflixCatalog
             BuffyInfo = Buffy.ToString();
             Console.WriteLine(BuffyInfo);
         }
-        static void IASIP()
+        public void IASIP()
         {
             Title IASIP = new TV(141);
             IASIP.name = "It's Always Sunny in Philadelphia";

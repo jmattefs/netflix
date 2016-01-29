@@ -12,15 +12,12 @@ namespace NetflixCatalog
         {
             View view = new View();
 
-            // view.Display();
+            view.Sort();
 
 
 
 
-            Title DieHard = new Movie(131);
-            DieHard.name = "Die Hard";
-            DieHard.rating = 5;
-            Console.WriteLine(DieHard.ToString());
+            
         }
     }
 }
