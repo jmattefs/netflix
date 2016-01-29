@@ -8,13 +8,13 @@ using System.Collections;
 
 namespace NetflixCatalog
 {
-    class Genre
+    public class Genre 
     {
         string genre;
     
-        public Genre(string Genre)
+        public Genre()
         {
-            this.genre = Genre;
+            
         }
         public void GenreAll()
         {
@@ -56,10 +56,40 @@ namespace NetflixCatalog
             ActionMovies.Add("Rush Hour");
             ActionMovies.Add("Mad Max");
             ActionMovies.Add("Mr and Mrs Smith");
+
+            foreach (string s in ActionMovies)
+            {
+                Console.WriteLine(s);
+            }
         }
-        public static Genre operator +(Genre Comedy, Genre Romantic)
+        public void GenreComedy()
         {
-           
+            List<string> ComedyMovies = new List<string>();
+            ComedyMovies.Add("Knocked Up");
+            ComedyMovies.Add("Zoolander");
+            ComedyMovies.Add("Silver Linings Playbook");
+            ComedyMovies.Add("Hot Fuzz");
+            ComedyMovies.Add("Rush Hour");
+            ComedyMovies.Add("The Princess Bride");
+            
+            foreach (string s in ComedyMovies)
+            {
+                Console.WriteLine(s);
+            }
         }
+        
+        public static Genre operator + (Genre Comedy, Genre Romantic)
+        {
+            Genre RomanticComedy = new Genre();
+            RomanticComedy = Comedy + Romantic;
+            return RomanticComedy;
+        }
+        public static Genre operator + (Genre genre, Title title)
+        {
+            Genre aggregate = new Genre();
+            aggregate = genre + title;
+            return aggregate;
+        }
+        
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalog
 {
-    class Movie : Title
+    public class Movie : Title
     {
-        int duration;
+        public int duration;
         public Movie(int duration)
         {
             this.duration = duration;
@@ -16,7 +16,8 @@ namespace NetflixCatalog
 
         public override string ToString()
         {
-            return name + ", " + duration + "minutes";
+            return name + ": " + duration + " minutes; "+ rating +" thumbs up!" ;
         }
+        
     }
 }

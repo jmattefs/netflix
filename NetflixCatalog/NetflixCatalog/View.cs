@@ -30,25 +30,35 @@ namespace NetflixCatalog
             {
                 case "A":
                 case "a":
-                    Console.WriteLine();
+                    Console.WriteLine("---Type in a title to see more information---");
                     break;
                 case "B":
                 case "b":
-                    Console.WriteLine();
+                    Console.WriteLine("---Type in a title to see more information---");
+                    genre.GenreComedy();
+                    string input = Console.ReadLine();
                     break;
                 case "C":
                 case "c":
-                    Console.WriteLine();
+                    Console.WriteLine("---Type in a title to see more information---");
                     break;
                 case "D":
                 case "d":
+                    genre.
+                    Console.WriteLine("---Type in a title to see more information---");
                     genre.GenreAll();
+                    string input = Console.ReadLine();           //return input for all... new function with switch case for movies.. tv..
                     break;
                 default:
                     Console.WriteLine();
                     break;
                    
             }
+
+        }
+        public void Info()
+        {
+            string response = Display();
 
         }
     }
