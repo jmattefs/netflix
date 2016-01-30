@@ -15,7 +15,7 @@ namespace NetflixCatalog
        
         public Genre()
         {
-        
+
         }
 
         public void GenreAll()

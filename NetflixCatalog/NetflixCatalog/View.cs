@@ -26,6 +26,7 @@ namespace NetflixCatalog
         }
         public void Sort()
         {
+           
             Genre g = new Genre();
             string input = Initial();
             switch (input)

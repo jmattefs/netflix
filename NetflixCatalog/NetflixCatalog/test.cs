@@ -7,26 +7,28 @@ using System.Threading.Tasks;
 
 namespace NetflixCatalog
 {
-    public class Catalogue
+    class test : IEnumerable
     {
+        List<Title> Titles = new List<Title>();
         
-        public Catalogue()
+        public test(List<Title> Titles)
         {
-           
+            this.Titles = Titles;
         }
-        
         public void DieHard()
         {
             Title DieHard = new Movie(131);
+            
             DieHard.name = "Die Hard";
             DieHard.rating = 4;
             string DieHardInfo;
             DieHardInfo = DieHard.ToString();
-            Console.WriteLine(DieHardInfo);           
+            Console.WriteLine(DieHardInfo);
         }
         public void Heat()
         {
             Title Heat = new Movie(171);
+            
             Heat.name = "Heat";
             Heat.rating = 3;
             string HeatInfo;
@@ -35,7 +37,7 @@ namespace NetflixCatalog
         }
         public void HotFuzz()
         {
-            Title HotFuzz= new Movie(121);
+            Title HotFuzz = new Movie(121);
             HotFuzz.name = "Hot Fuzz";
             HotFuzz.rating = 3;
             string HotFuzzInfo;
@@ -55,7 +57,7 @@ namespace NetflixCatalog
         }
         public void MadMax()
         {
-            Title MadMax= new Movie(88);
+            Title MadMax = new Movie(88);
             MadMax.name = "Mad Max";
             MadMax.rating = 2;
             string MadMaxInfo;
@@ -65,7 +67,7 @@ namespace NetflixCatalog
         }
         public void MrMrsSmith()
         {
-            Title MrMrsSmith= new Movie(123);
+            Title MrMrsSmith = new Movie(123);
             MrMrsSmith.name = "Mr and Mrs Smith";
             MrMrsSmith.rating = 2;
             string MrMrsSmithInfo;
@@ -75,7 +77,7 @@ namespace NetflixCatalog
         }
         public void KnockedUp()
         {
-            Title KnockedUp= new Movie(129);
+            Title KnockedUp = new Movie(129);
             KnockedUp.name = "Knocked Up";
             KnockedUp.rating = 2;
             string KnockedUpInfo;
@@ -95,7 +97,7 @@ namespace NetflixCatalog
         }
         public void PrincessBride()
         {
-            Title PrincessBride= new Movie(98);
+            Title PrincessBride = new Movie(98);
             PrincessBride.name = "The Princess Bride";
             PrincessBride.rating = 4;
             string PrincessBrideInfo;
@@ -105,7 +107,7 @@ namespace NetflixCatalog
         }
         public void Zoolander()
         {
-            Title Zoolander= new Movie(89);
+            Title Zoolander = new Movie(89);
             Zoolander.name = "Zoolander";
             Zoolander.rating = 2;
             string ZoolanderInfo;
@@ -125,7 +127,7 @@ namespace NetflixCatalog
         }
         public void DirtyDancing()
         {
-            Title DirtyDancing= new Movie(100);
+            Title DirtyDancing = new Movie(100);
             DirtyDancing.name = "Dirty Dancing";
             DirtyDancing.rating = 4;
             string DirtyDancingInfo;
@@ -135,7 +137,7 @@ namespace NetflixCatalog
         }
         public void Notebook()
         {
-            Title Notebook= new Movie(121);
+            Title Notebook = new Movie(121);
             Notebook.name = "The Notebook";
             Notebook.rating = 0;
             string NotebookInfo;
@@ -215,6 +217,13 @@ namespace NetflixCatalog
             Console.WriteLine(IASIPinfo);
         }
 
-        
-    }  
+        public IEnumerator GetEnumerator()
+        {
+            foreach(Title t in Titles)
+            {
+                yield return t;
+            }
+        }
+    }
 }
+
