@@ -8,7 +8,7 @@ namespace NetflixCatalog
 {
     public class TV : Title
     {
-        int episodes;
+        public int episodes;
         public override int? rating { get; set; }
 
         public TV(int episodes)
